@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>RealDealReveal</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles-index.css" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
@@ -65,20 +65,10 @@
     <!-- Quiz Section -->
     <section id="quiz">
       <h1>Quiz</h1>
-      <p>Can you identify which image is AI-generated?</p>
-      <div class="quiz-container">
-        <div class="image-option">
-          <img src="image1.webp" id="image1" alt="Option 1" />
-        </div>
-        <div class="image-option">
-          <img src="image2.webp" id="image2" alt="Option 2" />
-        </div>
+      <p>Click the button below to test your skills in identifying AI-generated images.</p>
+      <div style="text-align: center; margin-top: 40px;">
+        <a href="quiz.html" class="quiz-button">Take Quiz</a>
       </div>
-      <button onclick="submitAnswer()">Submit Answer</button>
-      <p id="result"></p>
     </section>
-
-    <!-- JavaScript File -->
-    <script src="script.js"></script>
   </body>
 </html>
