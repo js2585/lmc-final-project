@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styles-quiz.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Floating Navbar -->
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      </ul>
+    </nav>
+
+    <!-- Timer -->
+    <div id="timer-container">
+      <span id="timer">05:00</span>
+    </div>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+      <h1>AI or Human Quiz</h1>
+      <p>Select the image you believe is AI-generated:</p>
+
+      <div class="quiz-container">
+        <div class="image-option">
+          <img id="image1" src="" alt="Option 1" />
+        </div>
+        <div class="image-option">
+          <img id="image2" src="" alt="Option 2" />
+        </div>
+      </div>
+
+      <button id="next-question-btn" onclick="loadNextQuestion()">Next Question</button>
+      <p id="feedback"></p>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" style="display: none;">
+      <h1>Leaderboard</h1>
+      <form id="username-form">
+        <label for="username">Enter your username:</label>
+        <input type="text" id="username" required />
+        <button type="submit">Submit</button>
+      </form>
+      <div id="rankings" style="display: none;">
+        <h2>Top Scores</h2>
+        <ol id="leaderboard-list"></ol>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+        <button id="reset-leaderboard-btn" onclick="resetLeaderboard()">Reset Leaderboard</button>
+      </div>
+    </section>
+
+    <!-- JavaScript File -->
+    <script src="js/script-quiz.js"></script>
+  </body>
+</html>
