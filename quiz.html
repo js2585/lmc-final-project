@@ -37,9 +37,23 @@
         </div>
       </div>
 
-      <button id="next-question-btn" onclick="loadNextQuestion()">Next Question</button>
+      <button id="next-question-btn" onclick="loadNextQuestion()" style="display:none;">Next Question</button>
+      <button id="see-explanation-btn" onclick="showExplanation()" style="display:none;">See Explanation</button>
       <p id="feedback"></p>
     </section>
+
+    <!-- Explanation Section -->
+    <section id="explanation-section" style="display: none;">
+      <h1>Explanation</h1>
+      <img
+        id="annotated-image"
+        src=""
+        alt="Annotated Explanation"
+        style="max-width: 100%; margin-bottom: 20px;"
+      />
+      <p id="annotated-guide" style="margin: 20px auto; font-size: 16px; color: #333;"></p>
+      <button id="next-question-explanation-btn" onclick="loadNextQuestionFromExplanation()">Next Question</button>
+    </section>    
 
     <!-- Leaderboard Section -->
     <section id="leaderboard" style="display: none;">
