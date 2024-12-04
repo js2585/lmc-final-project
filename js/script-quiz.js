@@ -2,8 +2,8 @@
     {
       ai: 'images/image_ai.webp',
       human: 'images/image_h.webp',
-      aiAnnotated: 'images/image_ai_box.webp',
-      AnnotatedGuides: '',
+      aiAnnotated: 'images/image_ai_box.png',
+      AnnotatedGuides: 'Features: 1) Red square: unrealistic scenario(truck floating on river), 2) Blue square: lacking detail(liberty face is lacking facial details)',
       citation: 'https://www.britannica.com/topic/Statue-of-Liberty'
     },
     {
