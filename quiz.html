@@ -37,37 +37,64 @@
         </div>
       </div>
 
-      <button id="next-question-btn" onclick="loadNextQuestion()" style="display:none;">Next Question</button>
-      <button id="see-explanation-btn" onclick="showExplanation()" style="display:none;">Learn Why</button>
+      <button
+        id="next-question-btn"
+        onclick="loadNextQuestion()"
+        style="display: none"
+      >
+        Next Question
+      </button>
+      <button
+        id="see-explanation-btn"
+        onclick="showExplanation()"
+        style="display: none"
+      >
+        Learn Why
+      </button>
       <p id="feedback"></p>
     </section>
 
     <!-- Explanation Section -->
-    <section id="explanation-section" style="display: none;">
-      <h1>Explanation</h1>
+    <section id="explanation-section" style="display: none">
+      <h1 style="margin-top: 50px">Explanation</h1>
       <img
         id="annotated-image"
         src=""
         alt="Annotated Explanation"
-        style="max-width: 100%; margin-bottom: 20px;"
+        style="max-width: 100%; margin-bottom: 20px"
       />
-      <p id="annotated-guide" style="margin: 20px auto; font-size: 16px; color: #333;"></p>
-      <button id="next-question-explanation-btn" onclick="loadNextQuestionFromExplanation()">Next Question</button>
-    </section>    
+      <p
+        id="annotated-guide"
+        style="
+          margin: 20px auto;
+          font-size: 16px;
+          color: #333;
+          white-space: pre-line;
+        "
+      ></p>
+      <button
+        id="next-question-explanation-btn"
+        onclick="loadNextQuestionFromExplanation()"
+      >
+        Next Question
+      </button>
+    </section>
 
     <!-- Leaderboard Section -->
-    <section id="leaderboard" style="display: none;">
+    <section id="leaderboard" style="display: none">
       <h1>Leaderboard</h1>
       <form id="username-form">
         <label for="username">Enter your username:</label>
         <input type="text" id="username" required />
         <button type="submit">Submit</button>
       </form>
-      <div id="rankings" style="display: none;">
+      <div id="rankings" style="display: none">
         <h2>Top Scores</h2>
         <ol id="leaderboard-list"></ol>
         <button onclick="restartQuiz()">Restart Quiz</button>
-        <button id="reset-leaderboard-btn" onclick="resetLeaderboard()">Reset Leaderboard</button>
+        <button id="reset-leaderboard-btn" onclick="resetLeaderboard()">
+          Reset Leaderboard
+        </button>
       </div>
     </section>
 
